@@ -10,7 +10,7 @@ This repo is a sample extractor that you can fork to implement your own. We will
 
 Some ideas for extractors include:
 
-- an extractor that checks whether the given web app is available as a native mobile in an app store such as Google Play Market
+- an extractor that checks whether the given web app is available as a native mobile app in a store such as Google Play Market
 - an extractor that identifies which infrastructure provider the web app uses, e.g. Amazaon, Azure, App Engine etc.
 - an extractor that uses the Twitter API to list all popular tweets about the app
 
