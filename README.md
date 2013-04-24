@@ -43,7 +43,9 @@ module.exports = function(app, config) {
 ## Presentation
 
 The way in which the information provided by the extractors is presented on the app profile pages varies. For example the Web of Trust reputation scores are compared to the other scores in the database and displayed as a five star rating. 
-Other data such as news posts are displayed as a series of links to stories below the app description. To accommodate more information, we will be adding tabs below the description, so if you want you can include some sample HTML for us to use the display the data provided by your extractor. Please use the [Bootstrap](http://twitter.github.io/bootstrap/) framework for styling your HTML. 
+Other data such as news posts are displayed as a series of links to stories below the app description. 
+
+To accommodate more information, we will be adding tabs below the description, so if you want you can include some sample HTML for us to use to display the data provided by your extractor. Please use the [Bootstrap](http://twitter.github.io/bootstrap/) framework for styling your HTML. 
 
 ## Examples
 
