@@ -1,5 +1,9 @@
 // http://www.mywot.com/wiki/API
-var get = require("ringo/httpclient").get;
+var HttpClient = require("httpclient").HttpClient;
+
+function get(url) {
+  return new HttpClient({ url: app.url }).finish().body.read();
+}
 
 var extract = module.exports = function(app) {
   var result = JSON.parse(get("http://api.mywot.com/0.4/public_link_json?hosts=" + encodeURIComponent(app.url) + "/").content);
