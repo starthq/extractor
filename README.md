@@ -22,7 +22,7 @@ First make sure you have Node.js installed from [http://nodejs.org](http://nodej
 
 Fork this repo by clicking the "Fork" button in the upper right of this page, then clone your fork with `git clone git@github.com:USERNAME/extractor.git` (substituting your username for USERNAME) then change to the project directory with `cd extractor`.
 
-To run, simply type `common-node .`
+To run, simply type `common-node index.js StartHQ https://starthq.com`
 
 ## API
 
