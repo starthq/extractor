@@ -26,14 +26,19 @@ To run, simply type `common-node .`
 
 ## API
 
+The extractor modules export a single method that accepts two parameters:
 
-<code>
+- app - is the app object which contains at least the `name` and `url` attributes that are the app name and index page URL respectively; the app object also contains data retrieved by all the other extractors, see the [`app.json`](./app.json) example file.
+- config - this is the optional configuration object which may for example be an API key needed to make API requests by the extractor
+
+
+```javascript
 var get = require("ringo/httpclient").get;
 
 module.exports = function(app, config) {
-	return get(app.url).content.length;
+  return get(app.url).content.length;
 }
-</code>
+```
 
 ### Examples
 
@@ -47,7 +52,7 @@ Some example extractors are included in the `examples` subdirectory:
 
 If your extractor has dependencies other than Common Node, please include an NPM compatible package.json file. To avoid proliferation of dependencies, we recommend using the following packages for some standard tasks:
 
-- xml2s - for parsing XML
+- [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) - for parsing XML
 
 ### Support
 
