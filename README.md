@@ -22,7 +22,7 @@ First make sure you have Node.js installed from [http://nodejs.org](http://nodej
 
 Fork this repo by clicking the "Fork" button in the upper right of this page, then clone your fork with `git clone git@github.com:USERNAME/extractor.git` (substituting your username for USERNAME) then change to the project directory with `cd extractor`.
 
-To run, simply type `common-node index.js StartHQ https://starthq.com`
+To run, simply type `common-node index.js`
 
 ## API
 
@@ -33,19 +33,19 @@ The extractor modules export a single method that accepts two parameters:
 
 
 ```javascript
-var get = require("ringo/httpclient").get;
+var HttpClient = require("httpclient").HttpClient;
 
 module.exports = function(app, config) {
-  return get(app.url).content.length;
-}
+  return new HttpClient({url:app.url}).finish().body.read().length;
+};
 ```
 
 ## Presentation
 
-The way in which the information provided by the extractors is presented on the app profile pages varies. For example the Web of Trust reputation scores are compared to the other scores in the database and displayed as a five star rating. 
-Other data such as news posts are displayed as a series of links to stories below the app description. 
+The way in which the information provided by the extractors is presented on the app profile pages varies. For example the Web of Trust reputation scores are compared to the other scores in the database and displayed as a five star rating.
+Other data such as news posts are displayed as a series of links to stories below the app description.
 
-To accommodate more information, we will be adding tabs below the description, so if you want you can include some sample HTML for us to use to display the data provided by your extractor. Please use the [Bootstrap](http://twitter.github.io/bootstrap/) framework for styling your HTML. 
+To accommodate more information, we will be adding tabs below the description, so if you want you can include some sample HTML for us to use to display the data provided by your extractor. Please use the [Bootstrap](http://twitter.github.io/bootstrap/) framework for styling your HTML.
 
 ## Examples
 
