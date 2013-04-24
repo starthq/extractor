@@ -18,7 +18,7 @@ For more ideas, check out the [StartHQ Roadmap](http://starthq.uservoice.com).
 
 ## Setup
 
-First make sure you have Node.js installed from [http://nodejs.org](http://nodejs.org). NPM should be bundled with Node, so use that to install [Common Node](http://olegp.github.io/common-node/) with `npm install common-node -g` (you may need to prefix that `sudo` on Mac and Linux).
+First make sure you have Node.js installed from [http://nodejs.org](http://nodejs.org). NPM should be bundled with Node, so use that to install [Common Node](http://olegp.github.io/common-node/) with `npm install common-node -g` (you may need to prefix that with `sudo` on Mac and Linux).
 
 Fork this repo by clicking the "Fork" button in the upper right of this page, then clone your fork with `git clone git@github.com:USERNAME/extractor.git` (substituting your username for USERNAME) then change to the project directory with `cd extractor`.
 
@@ -40,23 +40,28 @@ module.exports = function(app, config) {
 }
 ```
 
-### Examples
+## Presentation
+
+The way in which the information provided by the extractors is presented on the app profile pages varies. For example the Web of Trust reputation scores are compared to the other scores in the database and displayed as a five star rating. 
+Other data such as news posts are displayed as a series of links to stories below the app description. To accommodate more information, we will be adding tabs below the description, so if you want you can include some sample HTML for us to use the display the data provided by your extractor. Please use the [Bootstrap](http://twitter.github.io/bootstrap/) framework for styling your HTML. 
+
+## Examples
 
 Some example extractors are included in the `examples` subdirectory:
 
-- wot - uses the Web of Trust API
+- wot - uses the [Web of Trust API](http://www.mywot.com/wiki/API)
 
-### Dependencies
+## Dependencies
 
 If your extractor has dependencies other than Common Node, please include an NPM compatible package.json file. To avoid proliferation of dependencies, we recommend using the following packages for some standard tasks:
 
 - [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) - for parsing XML
 
-### Support
+## Support
 
 If you run into any problems or want to let us know about your extractor so we can merge it in, either create an issue under this repo, or e-mail us at developers@starthq.com
 
-### License
+## License
 
 __Note that you need to retain this license with an updated copyright line in your fork in order for us to be able to run your extractor.__
 
