@@ -46,8 +46,6 @@ Some example extractors are included in the `examples` subdirectory:
 
 - wot - uses the Web of Trust API
 
-### Sample App Data
-
 ### Dependencies
 
 If your extractor has dependencies other than Common Node, please include an NPM compatible package.json file. To avoid proliferation of dependencies, we recommend using the following packages for some standard tasks:
