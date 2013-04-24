@@ -1,87 +1,9 @@
 {
-  _id: ObjectId("5123e0b1000000ca260000a9"),
-  description: "Google+ aims to make sharing on the web more like sharing in real life. Check out Circles, Events and Hangouts, just a few of the things we've been working on.",
-  extractors: {
-    crunchbase: {
-      product: {
-        url: "http://www.crunchbase.com/product/google-plus",
-        twitter: ""
-      },
-      company: {
-        url: "http://www.crunchbase.com/company/google",
-        twitter: "google"
-      }
-    },
-    wot: {
-      trust: 95,
-      reliability: 95,
-      privacy: 94
-    },
-    pagespeed: {
-      score: 99
-    },
-    hnsearch: [
-      {
-        title: "You know, Google, the web already had this feature",
-        url: "http://blog.vrypan.net/2013/4/11/Googleplus-pages-notifications/",
-        date: ISODate("2013-04-11T21:17:36Z")
-      },
-      {
-        title: "Google Street View Hyperlapses [video]",
-        url: "http://www.thisiscolossal.com/2013/04/google-street-view-hyperlapse/",
-        date: ISODate("2013-04-11T09:42:42Z")
-      },
-      {
-        title: "How Google Sliced Away Our Knife Ads",
-        url: "http://www.knife-depot.com/blog/how-google-sliced-away-our-knife-ads/",
-        date: ISODate("2013-03-25T18:44:40Z")
-      },
-      {
-        title: "Sorry Google; you can Keep it to yourself",
-        url: "http://gigaom.com/2013/03/20/sorry-google-you-can-keep-it-to-yourself/",
-        date: ISODate("2013-03-21T01:47:32Z")
-      },
-      {
-        title: "You just went to the Google homepage. What actually happened?",
-        url: "https://plus.google.com/112218872649456413744/posts/dfydM2Cnepe?",
-        date: ISODate("2013-03-20T17:06:49Z")
-      }
-    ],
-    icon: {
-      url: "http://dev.starthq.com/img/padding.png"
-    },
-    favicon: {
-      url: "//d3iuihzgshbaa8.cloudfront.net/icons/37da42c4ba6b1de1cb9ed488126c5b14.png"
-    },
-    touchicon: {
-      url: "//d3iuihzgshbaa8.cloudfront.net/tiles/37da42c4ba6b1de1cb9ed488126c5b14.png"
-    },
-    alexa: {
-      rank: {
-        value: 2,
-        delta: 1
-      },
-      reach: {
-        value: 426900,
-        delta: -6.09
-      },
-      views: {
-        value: null,
-        delta: -6.45
-      },
-      engagement: {
-        value: 15.79,
-        delta: -0.38
-      }
-    },
-    social: {
-      twitter: 1,
-      facebook: 0,
-      linkedin: 0,
-      score: 1
-    }
-  },
-  keywords: [
+  "name":"Google+",
+  "nameLowerCase":"google",
+  "url":"https://plus.google.com/",
+  "description":"Google+ aims to make sharing on the web more like sharing in real life. Check out Circles, Events and Hangouts, just a few of the things we've been working on.",
+  "keywords":[
     "google",
     "aims",
     "to",
@@ -110,15 +32,5 @@
     "ve",
     "been",
     "working"
-  ],
-  name: "Google+",
-  nameLowerCase: "google",
-  tags: {
-    category: [
-      "marketing"
-    ]
-  },
-  updated: 1366768469893,
-  url: "https://plus.google.com/",
-  verified: true
+  ]
 }
