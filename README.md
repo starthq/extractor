@@ -1,10 +1,10 @@
 # StartHQ Extractor API
 
+[StartHQ](https://starthq.com) is a web app directory that provides info such as the speed of the app, its popularity, reliability, related news and recent blog posts. We've been asked by a number of people to add various bits of information to the app profile pages, such as the summary of apps' ToS, availability of mobile apps etc. As developers ourselves, we know that it is often easier to write code than explain what we want, so we've decided to share our internal APIs in the hope that you would write the code needed to pull in the data you want yourself. In return, we will give you full access to all the data that we collect & make displaying the information you need a priority.
+
 ## Overview
 
-[StartHQ](https://starthq.com) is a web app directory that provides info such as the speed of the app, its popularity, reliability, related news, recent blog posts etc. The directory is kept automatically up to date with API integrations, which are implemented via "extractors".
-
-Extractors are CommonJS modules that typically use the synchronous Common Node [httpclient](http://olegp.github.io/common-node/doc/httpclient/index.html) interface for making HTTP requests.
+The directory is kept automatically up to date with API integrations, which are implemented via "extractors". Extractors are CommonJS modules that typically use the synchronous Common Node [httpclient](http://olegp.github.io/common-node/doc/httpclient/index.html) interface for making HTTP requests.
 
 This repo is a sample extractor that you can fork to implement your own. We will run your extractor on our infrastructure against the directory, include the data it provides on the app pages, and give it back to you via a RESTful API. You can use this data wherever you want, but please do link back to us.
 
