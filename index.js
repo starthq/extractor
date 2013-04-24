@@ -6,5 +6,5 @@ var extract = module.exports = function(app) {
 };
 
 if (require.main === module) {
-  console.log(extract({name:process.argv[2], url:process.argv[3]}));
+  console.log(extract(require('./app.json')));
 }
