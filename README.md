@@ -28,7 +28,7 @@ To run, simply type `common-node index.js`
 
 The extractor modules export a single method that accepts two parameters:
 
-- app - is the app object which contains at least the `name` and `url` attributes that are the app name and index page URL respectively; the app object also contains data retrieved by all the other extractors, see the [`app.json`](./app.json) (note that this is a JS, not JSON representation) example file.
+- app - is the app object which contains at least the `name` and `url` attributes that are the app name and index page URL respectively; the app object also contains data retrieved by all the other extractors, see the [`app.json`](./app.json) example file.
 - config - this is the optional configuration object which may for example be an API key needed to make API requests by the extractor
 
 
