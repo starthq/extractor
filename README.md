@@ -1,6 +1,6 @@
 # StartHQ Extractor API
 
-[StartHQ](https://starthq.com) is a web app directory that provides info such as the speed of the app, its popularity, reliability, related news and recent blog posts. We've been asked by a number of people to add various bits of information to the app profile pages, such as the summary of apps' ToS, availability of mobile apps etc. As developers ourselves, we know that it is often easier to write code than explain what we want, so we've decided to share our internal APIs in the hope that you would write the code needed to pull in the data you want yourself. In return, we will give you full access to all the data that we collect & make displaying the information you need a priority.
+The [StartHQ web app directory](https://starthq.com/apps/) provides info such as the speed of the app, its popularity, reliability, related news and recent blog posts. We've been asked by a number of people to add various bits of information to the app profile pages, such as the summary of apps' ToS, availability of mobile apps etc. As developers ourselves, we know that it is often easier to write code than explain what we want, so we've decided to share our internal APIs in the hope that you would write the code needed to pull in the data you want yourself. In return, we will give you full access to all the data that we collect & make displaying the information you need a priority.
 
 ## Overview
 
