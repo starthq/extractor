@@ -1,4 +1,4 @@
-// example extractor that returns the number bytes in the app's index page
+// example extractor that returns the number of bytes in the app's index page
 var HttpClient = require("httpclient").HttpClient;
 
 var extract = module.exports = function(app) {
